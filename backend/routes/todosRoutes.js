@@ -13,7 +13,7 @@ router.get('/user',authMiddleware, async(req,res)=>{
         data:{
             username:user.username,
             email:user.email,
-            picture:`http://localhost:5003/${user.profile_picture}`
+            picture:`https://backend-1vjp.onrender.com/${user.profile_picture}`
         }
     })
     } catch (error) {
