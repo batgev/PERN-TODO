@@ -187,7 +187,7 @@ const TodoDashboard = ()=> {
     
   }}>
     {/*header section */}
-    <div className="flex justify-between items-center gap-8 mt-[5px] w-screen max-h-screen">
+    <div className="flex justify-between items-center gap-4 mt-[5px] w-screen max-h-screen">
       
       {/*menu bar */}
       <div className="flex flex-col gap-4 ml-4">
