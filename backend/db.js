@@ -10,18 +10,8 @@ const pool = new Pool({
     ssl: 
         process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
 })
-
-pool.on('error', (err) => {
-    console.error('Unexpected error on idle client', err)
+pool.on('connect', () => {
+    console.log('Connected to the database')
 })
 
-// Testing the connection
-(async () => {
-    try {
-        await pool.connect()
-        console.log('Connected to the neondb database')
-    } catch (err) {
-        console.error('Database connection failed:', err.message)
-    }
-})()
 export default pool
