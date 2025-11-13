@@ -315,7 +315,7 @@ const TodoDashboard = ()=> {
 
   {/*footer */}
     <footer className="flex justify-end w-screen ">
-  <button className="bg-green-600  text-center mr-4 hover:scale-95 -mb-4 p-4  rounded-full " onClick={()=>{
+  <button className="bg-green-600  text-center mr-4 hover:scale-95 -mt-4 p-4  rounded-full " onClick={()=>{
     setAddTodo(true)
     setToggleMenu(false)
   }}><img src="assets/addIcon.svg" alt="" width={40}/></button>
