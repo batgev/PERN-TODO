@@ -201,7 +201,7 @@ const TodoDashboard = ()=> {
         }}/>
 
         {/*sidebar section */}
-        <div  className={`${toggleMenu ? 'w-[70vw]':'right-[387px]'} flex flex-col justify-between fixed mt-[3rem] bg-emerald-600  h-[80vh] shadow-md text-2xl p-2  -ml-5 rounded-r-md overflow-x-hidden text-emerald-100`}>
+        <div  className={`${toggleMenu ? 'w-[70vw]':'right-[387px]'} flex flex-col justify-between fixed mt-[3rem] bg-emerald-600  h-[90vh] shadow-md text-2xl p-2  -ml-5 rounded-r-md overflow-x-hidden text-emerald-100`}>
           <div className="text-right shadow-md" onClick={()=> setToggleMenu(false)}> ❌</div>
           <ul className="flex flex-col gap-8  p-2 h-[95%]">
             <li className='shadow-md shadow-black px-2' onClick={()=>{
