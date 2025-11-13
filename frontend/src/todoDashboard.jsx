@@ -202,6 +202,9 @@ const TodoDashboard = ()=> {
 
         {/*sidebar section */}
         <div  className={`${toggleMenu ? 'w-[70vw]':'right-[387px]'} flex flex-col justify-between fixed mt-[3rem] bg-emerald-600  h-[80vh] shadow-md text-2xl p-2  -ml-5 rounded-r-md overflow-x-hidden text-emerald-100`}>
+          <div className="text-right shadow-md" onClick={()=>{
+            setToggleMenu(false)
+          }> ❌</div>
           <ul className="flex flex-col gap-8  p-2 h-[95%]">
             <li className='shadow-md shadow-black px-2' onClick={()=>{
               setAddTodo(true)
@@ -315,7 +318,7 @@ const TodoDashboard = ()=> {
 
   {/*footer */}
     <footer className="flex justify-end w-screen ">
-  <button className="bg-green-600  text-center mr-4 hover:scale-95 -mt-4 p-4  rounded-full " onClick={()=>{
+  <button className="bg-green-600  text-center mr-4 hover:scale-95 -mt-8 p-4  rounded-full " onClick={()=>{
     setAddTodo(true)
     setToggleMenu(false)
   }}><img src="assets/addIcon.svg" alt="" width={40}/></button>
