@@ -1,10 +1,10 @@
 import {Toaster} from 'react-hot-toast'
 import Auth from "./auth";
 import TodoDashboard from "./todoDashboard";
-import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import {createHashRouter,RouterProvider} from 'react-router-dom'
 import Admin from './Admin';
 function App() {
-  const router = createBrowserRouter([{
+  const router = createHashRouter([{
     path:"/",
     element:<Auth />
   },{
