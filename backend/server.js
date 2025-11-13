@@ -12,7 +12,11 @@ const app = express()
 const PORT =process.env.PORT || 5003
 
 app.use(cors(
-    origin:"https://taskmanager-pcp0.onrender.com"
+    {
+         origin: "https://taskmanager-pcp0.onrender.com", // ✅ inside object
+        methods: ["GET", "POST", "PUT", "DELETE"],
+        credentials: true,
+    }
 ))
 app.use(express.json())
 app.use(bodyParser.json({limit:"20mb"}))
