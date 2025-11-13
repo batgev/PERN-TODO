@@ -11,7 +11,9 @@ dotenv.config()
 const app = express()
 const PORT = 5003
 
-app.use(cors())
+app.use(cors(
+    origin:"https://taskmanager-pcp0.onrender.com/"
+))
 app.use(express.json())
 app.use(bodyParser.json({limit:"20mb"}))
 app.use('/uploads',express.static(path.join(process.cwd(),"uploads")))
