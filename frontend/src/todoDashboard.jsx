@@ -240,7 +240,7 @@ const TodoDashboard = ()=> {
 
       {/*user profile imge */}
       <div className="mr-4 border-4 border-red-800 rounded-full shadow-md">
-        <img src={profile} alt="user profile"  className="rounded-full w-[80px] h-[80px]  object-cover"/>
+        <img src={profile} alt="user profile"  className="rounded-full w-[60px] h-[60px]  object-cover"/>
       </div>
     </div>
 
