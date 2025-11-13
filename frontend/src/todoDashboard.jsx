@@ -252,7 +252,7 @@ const TodoDashboard = ()=> {
         <img src="assets/searchbtn.svg" alt="" className='border-2 border-emerald-800 px-2 bg-emerald-500 rounded-r-full' width={50}/>
       </span>
       {/*todo display area! */}
-      <ul className='flex flex-col gap-4 h-[60vh] overflow-y-auto outline-none py-4'>
+      <ul className='flex flex-col gap-4 h-[55vh] overflow-y-auto outline-none py-4'>
         {tasks.length === 0 ? <p className='text-gray-300'>No tasks yet..</p>: tasks.map((task)=>
             <li key={task.id} className='flex flex-col bg-yellow-100 shadow-md shadow-black p-2 min-w-[90vw] max-w-[95vw]'>
               <div className='flex justify-between mb-2'>
@@ -315,7 +315,7 @@ const TodoDashboard = ()=> {
 
   {/*footer */}
     <footer className="flex justify-end w-screen ">
-  <button className="bg-green-600  text-center mr-4 hover:scale-95 mb-4 p-4  rounded-full " onClick={()=>{
+  <button className="bg-green-600  text-center mr-4 hover:scale-95 -mb-4 p-4  rounded-full " onClick={()=>{
     setAddTodo(true)
     setToggleMenu(false)
   }}><img src="assets/addIcon.svg" alt="" width={40}/></button>
