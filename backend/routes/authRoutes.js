@@ -87,7 +87,7 @@ router.post('/login', async (req, res) => {
             return res.status(500).json({ error: 'Server misconfiguration' })
         }
 
-        const token = jwt.sign({ id: user.id }, jwtSecret, { expiresIn: '15m' })
+        const token = jwt.sign({ id: user.id }, jwtSecret, { expiresIn: '60m' })
         const { password: pw, ...userSafe } = user
         res.status(200).json({ message: 'Logged in Successfully', token, user: userSafe })
     } catch (error) {
