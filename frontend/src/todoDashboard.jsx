@@ -181,7 +181,7 @@ const TodoDashboard = ()=> {
  
     }
     
-  return <div className="flex flex-col items-center justify-between w-full h-screen text-xl" style={{background:"url('assets/background.svg')",
+  return <div className="flex flex-col items-center justify-between w-full h-screen text-xl md:hidden" style={{background:"url('assets/background.svg')",
     backgroundSize:'cover',
     
     
