@@ -9,7 +9,7 @@ import path from 'path'
 dotenv.config()
 
 const app = express()
-const PORT = 5003
+const PORT =process.env.PORT || 5003
 
 app.use(cors(
     origin:"https://taskmanager-pcp0.onrender.com/"
