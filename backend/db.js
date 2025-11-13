@@ -12,7 +12,7 @@ const pool = new Pool({
 })
 
 pool.connect().then(
-    console.log(`Connected to the ${process.env.DB_NAME} database`)
+    console.log(`Connected to the neondb database`)
 ).catch(err=>{
     console.log(err.message);
     
